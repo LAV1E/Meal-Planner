@@ -114,7 +114,7 @@ const RecipeCards = ({ query , refreshTrigger}) => {
         )}
 
          {/* Navigation Arrows - Only show if there are recipes */}
-        {filteredRecipes.length > 4 && (
+        {filteredRecipes.length > 0 && (
           <div className="flex justify-center mt-12 space-x-6">
             <button
               onClick={() => scroll("left")}
